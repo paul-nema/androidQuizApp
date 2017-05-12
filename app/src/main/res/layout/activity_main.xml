@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.quiz.MainActivity">
+
+        <TextView
+            android:id="@+id/text_instructions"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:textSize="14sp"
+            android:text="@string/instructions" />
+
+
+        <TextView
+            android:id="@+id/text_ques1"
+            style="@style/text_ques" />
+
+        <EditText
+            android:id="@+id/edit_answer1"
+            style="@style/text_answer" />
+
+        <TextView
+            android:id="@+id/text_ques2"
+            style="@style/text_ques" />
+
+        <EditText
+            android:id="@+id/edit_answer2"
+            style="@style/text_answer" />
+
+        <TextView
+            android:id="@+id/text_ques3"
+            style="@style/text_ques" />
+
+        <EditText
+            android:id="@+id/edit_answer3"
+            style="@style/text_answer" />
+
+        <TextView
+            android:id="@+id/text_ques4"
+            style="@style/text_ques" />
+
+        <EditText
+            android:id="@+id/edit_answer4"
+            style="@style/text_answer" />
+
+        <TextView
+            android:id="@+id/text_ques5"
+            style="@style/text_ques" />
+
+        <EditText
+            android:id="@+id/edit_answer5"
+            style="@style/text_answer" />
+
+        <TextView
+            android:id="@+id/text_ques6"
+            style="@style/text_ques" />
+
+        <EditText
+            android:id="@+id/edit_answer6"
+            style="@style/text_answer" />
+
+        <TextView
+            android:id="@+id/text_ques7"
+            style="@style/text_ques" />
+
+        <EditText
+            android:id="@+id/edit_answer7"
+            style="@style/text_answer" />
+
+        <TextView
+            android:id="@+id/text_ques8"
+            style="@style/text_ques" />
+
+        <EditText
+            android:id="@+id/edit_answer8"
+            style="@style/text_answer" />
+
+        <TextView
+            android:id="@+id/text_ques9"
+            style="@style/text_ques" />
+
+        <EditText
+            android:id="@+id/edit_answer9"
+            style="@style/text_answer" />
+
+        <TextView
+            android:id="@+id/text_ques10"
+            style="@style/text_ques" />
+
+        <EditText
+            android:id="@+id/edit_answer10"
+            style="@style/text_answer" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="checkAnswers"
+                android:text="@string/submit_answers" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="resetQuiz"
+                android:text="@string/reset_quiz" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
